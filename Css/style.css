@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+ body{
+    perspective: 700px;
+ }
+ header{
+    transform-style: preserve-3d;
+    margin-top: -50px;
+ }
+.fatherhead{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.furnitliste{
+    list-style: none;
+    font-size: 20;
+    text-align: center;
+}
+.listeheader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+.imgheader{
+    flex: 3;
+    background-color: green;
+}
+nav{
+    flex: 20;
+    text-align: center;
+}
+.span{
+    flex: 3;
+    text-align: right;
+}
+.icospan{
+    color: #f18f0f;
+    font-size: 30;
+    display:block;
+}
+.icospan:hover{
+    opacity: 0.4;
+}
+.aheader{
+    padding: 5px 15px;
+    position: relative;
+    color:black;
+}
+.aheader::before,.aheader::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    left: 0;
+    top: 0;
+    transition: transform 0.5s;
+    color: #b02e03;
+}
+.aheader::before{
+    border-width: 0px 2px;
+    height: 100%; 
+    width: 95%;
+    transform: scale3d(1,0,1);
+}
+.aheader:hover::before{
+    transform: scale3d(1,1,1);
+}
+.aheader::after{
+    border-width: 2px 0px;
+    height: 90%;
+    width: 95%;
+    transform: scale3d(0,1,1);
+    transform-origin: left;
+}
+.aheader:hover::after{
+    transform: scale3d(1,1,1);
+    transition-delay: .2s;
+}
+.furnit{
+    position: relative;
+}
+.fruittable{
+    position: absolute;
+    visibility: hidden;
+    background-color:rgb(228, 204, 125);
+    padding: 5px 10px;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    word-spacing: 20px;
+    z-index: 1;
+}
+.furnit:hover .fruittable{
+    visibility: visible;
+}
+.ue0{
+    border-bottom: 2px dotted brown;
+}
+/* ///////////////////////////////////////////////// */
+.mother{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background-image: url(../images/s2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.infomother{
+    width: 30%;
+    height: 60%;
+    color: #b02e03;
+    text-align:center;
+    line-height: 50px;
+ padding: 100px;
+    
+}
+.but{
+    margin-top: 80px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.but:hover{
+    background-color: #f18f0f;
+}
+.titmother{
+    text-align: center;
+}
+/* ///////////////////////////////////////////// */
+.brother{
+width: 80%;
+margin: auto;
+}
+.titlebrother{
+    text-align: center;
+    color: rgb(38, 2, 71);
+    padding: 30px;
+}
+.titlebrother:hover .linebrother{
+    width: 180px;
+    transition: 1s;
+}
+.linebrother{
+    width: 60px;
+    height: 4px;
+    background-color: rgb(209, 18, 18);
+    margin: auto;
+}
+.contborother{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.son3{
+    width: 23%;
+}
+
+.son3imag{
+    width: 100%;
+}
+.son3info{
+    padding: 10px;
+    line-height: 40px;   
+}
+.i33{
+    margin-left: 150px;
+    font-size: 30;
+    opacity: 0;
+    background-color:rgb(153, 2, 2);
+}
+.son3:hover .i33{
+    opacity: 1;
+    transition: 2s;
+}
+.son3h3{
+    word-spacing: 2px;
+    display: inline;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.sister{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sisterpp{
+    width: 55%;
+    height: 100%;
+    background-color:rgb(235, 228, 228);
+    line-height: 20px;
+    padding: 30px 10px;
+}
+.iss{
+    font-size: 30px;
+}
+.ptitle{
+    margin-left: 25px;
+}
+.sistertitle{
+    display: inline;
+}
+.sisterparg{
+    margin-top: 30px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+.sisterphoto{
+    width: 19%;
+    height: 100%;
+    align-items: end;
+    padding: 10px;
+    transition: transform  .5s;
+
+}
+.sisterspan1{
+    width: 40px;
+    height: 3px;
+    background-color:#b02e03;
+    display: inline-block;
+}
+.sisterphoto:hover{
+    transform: scale(1.1);
+}
+
+.f1{
+    background-image: url(../images/48.jpg);
+    background-size: cover;
+}
+.f2{
+    background-image: url(../images/43.jpg);
+    background-size: cover;
+}
+.sisterline{
+    margin-left: 75%;
+}
+.photop{
+    color:#b02e03;
+    
+}
+.photoh3{
+    letter-spacing: 2px;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+.father{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.son1{
+    width: 18%;
+    padding: 0px 5px;
+    border-right: 2px solid black;
+}
+.son11{
+    border: 0;
+}
+.icon{
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+
+}
+.ico1 ,.ico2{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    position: absolute;
+}
+.i11{ 
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 40;
+    margin: auto;
+    padding: 15px;
+     color: rgba(136, 95, 6, 0.568);
+} 
+.i1{
+    color:  rgba(240, 206, 133, 0.76);
+}
+.son1:hover .icon .ico1 .i11,.son1:hover .icon .ico2 .i1{
+    color:#b02e03;
+}
+.ico1{
+    z-index: 1;
+    top: 50%;
+    transition: all 2s;
+    transform: translateY(-50%);
+    transition-delay: all 1s;
+}
+.ico2{
+    bottom: 100%;
+    transform: translateY(8%);
+    transition: all 1s;
+    opacity: 1;
+    opacity: 0;
+}
+.son1:hover .icon .ico1{
+    transition: all 1s;
+    transform: translateY(100px);
+    opacity: 1;
+    opacity: 0;
+}
+
+.son1:hover .icon .ico2{
+    transition: all 1s;
+    transform: translateY(50%);
+    opacity: 1;
+    bottom: 50%;
+}
+.info{
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    white-space: 2px;
+}
+.infop{
+    margin-top: 20px;
+  color:  rgba(8, 8, 7, 0.568)
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+.father4{
+    width: 80%;
+    margin: auto;
+    padding: 20px; 
+}
+.title4{
+    text-align: center;
+    font-size: 20;
+}
+.line4{
+    width: 50px;
+    height: 4px;
+    background-color: #b02e03;
+    margin: auto;
+    margin-top: 5px;
+    transition: 1s;
+}
+.line4:hover{
+    width: 150px;
+    transition: 1s;
+}
+.brother41,.brother42{
+    width: 80%;
+    height: 380px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+}
+.brother42{
+    margin-top: 15px;
+}
+.ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+    width: 50%;
+    margin-left: 90px;
+    margin-top: 30px;
+    color: #b02e03;
+    font-weight: 4px;
+
+}
+.photo4{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.front4 ,.back4{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.front4{
+    z-index: 1;
+    position: absolute;
+}
+.photo4:hover .front4{
+    opacity:0.1 ;
+}
+.back4{
+    transform: scalex(0);
+    position: absolute;
+}
+.photo4:hover .back4{
+    transform: scalex(1);
+    transition: 1s;
+}
+.son41{
+    width: 32%;
+    height: 100%;
+    background-color: rgb(239, 239, 243);
+    position: relative;
+}
+.imag4{
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+.info4{
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.i4{
+color: rgb(245, 245, 7);
+}
+.i44{
+    color: rgb(212, 206, 206);
+}
+.p44{
+    font-size: 25;
+
+}
+.ic4{
+    justify-content:space-evenly;
+    align-items: center;
+    top: 50%;
+    background-color: orange;
+    position: absolute;
+    margin-left: 30%;
+}
+.ig{
+    text-align: center;
+    font-size: 25;
+    background-color:orange;
+    color: rgb(109, 104, 78);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
